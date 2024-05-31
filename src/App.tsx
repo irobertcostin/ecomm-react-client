@@ -4,6 +4,7 @@ import Home from "./components/home-components/Home";
 import Footer from "./components/home-components/Footer";
 import ScrollToTop from "./components/home-components/ScrollToTop";
 import Navbar from "./components/home-components/Navbar";
+import Wishlist from "./components/user-components/Wishlist";
 
 
 
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/wishlist' element={<Wishlist />} />
       </Routes>
       <Footer />
     </BrowserRouter>
