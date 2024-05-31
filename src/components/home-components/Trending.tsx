@@ -31,7 +31,7 @@ const Trending: React.FC = () => {
 
     return (
         <div className="w-full  bg-black px-5 lg:px-40 py-10 lg:py-20 clear-start text-white flex flex-col justify-center gap-10 md:gap-20">
-            <h1 className="text-center text-xl lg:text-2xl">STAY IN THE KNOW: TRENDING NOW</h1>
+            <h1 className="text-center text-xl lg:text-2xl">TRENDING NOW</h1>
             <div className="relative w-full sm:grid sm:grid-cols-3 gap-4">
                 <div className="sm:hidden w-full overflow-hidden">
                     <div className="w-full h-96  lg:h-[500px] flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
@@ -49,7 +49,6 @@ const Trending: React.FC = () => {
                         ))}
                     </div>
                 </div>
-
                 {images.map((image, index) => (
                     <div key={index} className="hidden sm:block w-full h-80 cursor-pointer lg:h-[450px] max-w-[600px] bg-cover bg-center" style={{ backgroundImage: `url(${image.url})` }}>
                         <div className="w-full h-full bg-black bg-opacity-0 hover:bg-opacity-50 duration-500 ease-in-out px-2">
@@ -62,7 +61,6 @@ const Trending: React.FC = () => {
                         </div>
                     </div>
                 ))}
-
                 <div className="absolute top-[45%] flex justify-between px-2 sm:hidden w-full">
                     <button onClick={handlePrev} className="rounded-full p-2 bg-white text-black">
                         <ArrowLeftIcon className="h-6" />
