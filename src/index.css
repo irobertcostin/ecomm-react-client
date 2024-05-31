@@ -29,6 +29,18 @@ code {
 }
 
 
+.black-btn {
+  background-color: black;
+  color: white
+}
+
+.black-btn:hover {
+  background-color: #CCFF00;
+  color: black;
+  animation-duration: 3s;
+}
+
+
 @media screen and (min-width: 720px) {
   .home-comm {
     background-image: url("https://res.cloudinary.com/dqvazcqdl/image/upload/v1716875825/setters-client/summer_j1woqq.avif");
