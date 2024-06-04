@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +16,35 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.home-comm {
+  background-image: url("https://res.cloudinary.com/dqvazcqdl/image/upload/v1716875826/setters-client/summer-sm_ncpf4w.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+.home-comm-label {
+  font-family: 'Rubik', sans-serif;
+}
+
+
+.black-btn {
+  background-color: black;
+  color: white
+}
+
+.black-btn:hover {
+  background-color: #CCFF00;
+  color: black;
+  animation-duration: 3s;
+}
+
+
+@media screen and (min-width: 720px) {
+  .home-comm {
+    background-image: url("https://res.cloudinary.com/dqvazcqdl/image/upload/v1716875825/setters-client/summer_j1woqq.avif");
+    background-size: cover;
+    background-position: center;
+  }
 }
